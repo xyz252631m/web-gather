@@ -21,7 +21,7 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
-//123
+//1232113123213213
 app.use(express.cookieParser('xiaocc_'));
 //app.use(express.cookieSession({ secret: 'tobo!', cookie: { maxAge: 60*1000 } }));
 app.use(express.session({ secret: 'tobo!', key: 'sid' , cookie: { maxAge: 20*60*1000 } }));
