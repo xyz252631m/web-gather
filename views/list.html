@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title><?=title?></title>
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/test.css" rel="stylesheet" />
+    <script src="javascripts/base/require.js"></script>
+    <script src="javascripts/start.js"></script>
+</head>
+<body>
+    <div class="search">
+        <span>
+            数据库：<select>
+                <option value="TravelDB">TravelDB</option>
+                <option value="Travel">Travel</option>
+            </select>
+        </span>
+        <span>
+            等级：<select id="level">
+                <option value="all">ALL</option>
+                <option value="error">ERROR</option>
+                <option value="debug">DEBUG</option>
+                <option value="info">INFO</option>
+            </select>
+        </span>
+    </div>
+    <div class="list-parent">
+        <ol>
+            <li>ID</li>
+            <li>Date</li>
+            <li>Level</li>
+            <li>Thread</li>
+            <li>Logger</li>
+            <li>Message</li>
+            <li>Exception</li>
+        </ol>
+        <ul class="ex-list">
+            <? for(var i=0; i<=list.length-1; i++){ ?>
+            <li><?=list[i].ID?><?=list[i].Id?></li>
+            <li><?=list[i].Date?></li>
+            <li><?=list[i].Level?></li>
+            <li><?=list[i].Thread?></li>
+            <li><?=list[i].Logger?></li>
+            <li><?=list[i].Message?></li>
+            <li><?=list[i].Exception?></li>
+            <?}?>
+        </ul>
+    </div>
+    <script>
+        require(['jquery'], function ($) {
+            $("#level").change(function () {
+                var level = $(this).val();
+                $.post('/getlist?level=' + level, function (red) {
+                    if (red) {
+                        var html = "";
+                        var list = red.list;
+                        for (var i = 0; i <= list.length - 1; i++) {
+                            html += " <li>" + list[i].ID + "</li>"
+                            html += " <li>" + list[i].Date + "</li>"
+                            html += " <li>" + list[i].Level + "</li>"
+                            html += " <li>" + list[i].Thread + "</li>"
+                            html += " <li>" + list[i].Logger + "</li>"
+                            html += " <li>" + list[i].Message + "</li>"
+                            html += " <li>" + list[i].Exception + "</li>"
+                        }
+                        $(".ex-list").html(html);
+                    }
+
+                },"json");
+
+             //   location.href = '/index?level=' + level;
+
+            });
+        });
+    </script>
+</body>
+</html>

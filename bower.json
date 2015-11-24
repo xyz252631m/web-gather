@@ -1,0 +1,9 @@
+{
+  "name": "list",
+  "version": "0.0.1",
+  "dependencies": {
+    "requirejs": "~2.1.18",
+    "angular": "~1.4.2",
+    "bootstrap": "~3.3.5"
+  }
+}

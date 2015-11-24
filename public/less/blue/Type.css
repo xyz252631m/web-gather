@@ -1,0 +1,71 @@
+﻿input[type=button], input[type=submit]{ width:50px; height:22px;margin-left:10px; cursor:pointer; border:#bfc8cf 1px solid;}
+input[type=button]:hover, input[type=submit]:hover{border:#00eeee solid 1px; background-color:White }
+/*powerinfo*/
+#divbody{ text-align:left; padding-left:100px;}
+#divbody ul{ width:200px; overflow:hidden; height:auto; background:none;   }
+#divbody  ul li input{ margin-top:4px; vertical-align:text-bottom;}
+#divbody ul li img{vertical-align:text-bottom;}
+#divbody ul li span{ height:25px; line-height:25px;  margin-left:10px; }
+#divbody ul li{ width:100%; height:25px; line-height:25px; float:left;text-align:left; }
+#divbody ul li a{ color:#333; display:block; width:100%; height:25px; }
+#divbody ul li a:hover{ color:red; }
+#divbody .uuliul{ height:auto !important;}
+#divbody .uulhide{ display:block; padding-left:20px;}
+#divbody label{ width:15px;}
+#power_submit{ width:150px; height:50px; padding-left:30px;  margin-top:30px; margin-bottom:30px;}
+#butsave{ float:left;}
+#btn_return{ float:right;}
+.upright{float:right !important; right:0px !important; top:0px !important}
+ /*newstype*/
+.typeselect{position:absolute; top:0px; right:0px; width:100%; display:none; padding-bottom:20px; border:#bfc8cf solid 3px;background-color:#fff;}
+.typeselect  .inputwidth{ width:80px;}
+.typeselect div{ height:30px; line-height:30px; margin-top:3px;}
+.typeselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+.typeselect input[type=text]{ height:18px; line-height:18px; float:right;width:300px;border:#999 1px solid; margin-top:5px;}
+.typeselect input[type=text]:focus{ border:red solid 1px;}
+.typeselect input[type=button],#typeselect input[type=submit]{  height:23px; line-height:23px; border:#bfc8cf 1px solid;}
+.typeselect .select_main{   color:#333; text-align:center;  padding-right:40px; width:500px; height:auto; margin:0px auto;margin-top:20px; }
+.typeselect .select_main div{ float:left;margin-left:85px; }
+.typeselect .divbotton{ width:500px;   padding-top:10px; clear:both; text-align:center;margin:0px auto;}
+.typetitle{ width:100%; height:35px; border-bottom:#bfc8cf solid 1px; text-align:center;margin:0px auto;}
+.typetitle input{ margin-top:5px;}
+.typelist{ width:100%; border:#bfc8cf solid 1px;height:auto; min-width:600px; float:left;}
+.typelist  li{ float:left; width:10%; background:url('images/line_btm.gif') right top repeat-y; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#bfc8cf solid 1px; overflow:hidden;}
+.typelist  li span{ float:left;background:url('images/line_btm.gif') right top repeat-y;width:60px; height:100%; }
+.typelist  li span input{ margin-top:5px;}
+.typelist   li input[type=checkbox]{margin-top:5px;}
+.typelist .linewstype{ width:40%;}
+.typelist .liright{ background: none;width:40%; clear:right;}
+/*systeminfo*/
+#systeminfo{}
+#systeminfo{ width:100%; border:#bfc8cf solid 1px; border-bottom:none; height:auto; min-width:600px; float:left;}
+#systeminfo  li{ float:left; width:33%; background:url('images/line_btm.gif') right top repeat-y ; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#bfc8cf solid 1px; overflow:hidden;}
+#systeminfo  li span{ float:left;background:url('images/line_btm.gif') right top repeat-y ;  width:60px; height:100%; }
+#systeminfo  li span input{ margin-top:5px;}
+#systeminfo   li input[type=checkbox]{margin-top:5px;}
+#systeminfo .linewstype{ width:40%;}
+#systeminfo .liright{ background: none;width:34%; clear:right;}
+
+ /*ResourceType*/
+#restypeselect{position:absolute; top:0px; right:0px; width:100%; display:none; padding-bottom:20px; border:#bfc8cf solid 3px;background-color:#fff;}
+#restypeselect  .inputwidth{ width:80px;}
+#restypeselect div{ height:30px; line-height:30px;}
+#restypeselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#restypeselect input{ height:18px; line-height:18px;float:right;  width:200px;border:#999 1px solid; margin-top:5px;}
+#restypeselect select { float:right; margin-top:5px;  width:203px; border:#ccc solid 1px; }
+#restypeselect input[type=text]:focus{ border:red solid 1px;}
+#restypeselect input[type=button],#restypeselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#bfc8cf 1px solid;}
+#restypeselect .select_main{   color:#333; width:300px; height:auto; margin:0px auto;}
+#restypeselect .select_main div{ margin-top:5px; }
+#restypeselect .divbotton{ width:300px; height:50px; clear:both; text-align:center;margin:0px auto;margin-top:5px; }
+#restypeselect .divbotton input{ float:none;}
+#restypelist{ width:100%; border:#bfc8cf solid 1px;height:auto; min-width:600px; float:left;}
+#restypelist  li{ float:left; width:10%; background:url('images/line_btm.gif') right top repeat-y ;; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#bfc8cf solid 1px; overflow:hidden;}
+#restypelist  li span{ float:left;background:url('images/line_btm.gif') right top repeat-y ;;  width:60px; height:100%; }
+#restypelist  li span input{ margin-top:5px;}
+#restypelist   li input[type=checkbox]{margin-top:5px;}
+#restypelist .litype{ width:30%;}
+#restypelist .liright{ background: none;width:20%; clear:right;}

@@ -1,0 +1,31 @@
+﻿/*edit*/
+.edit{ height:auto;width:100%}
+.edit .edit_top{ width:600px; height:auto; margin:0px auto}
+.edit .edit_top div{ height:35px; line-height:35px; width:290px; float:left}
+.edit  span{ float:left; display:block; width:70px; text-align:right}
+.edit .edit_top input,.edit .edit_top select{margin-top:8px; float:right; height:20px;line-height:18px;width:200px;border:#999 solid 1px}
+.edit .edit_top input:focus,.edit .edit_top select:focus{border:#ff0000 solid 1px}
+.edit .edit_top select{ width:202px;height:22px}
+.edit .upload{ width:600px; height:35px; line-height:35px; margin:0px auto; padding-top:8px; clear:both;}
+
+.edit .upload input[type=file]{ width:426px; height:20px;  float:right; margin-right:4px; border:#999 solid 1px;margin-top:8px;  line-height:18px; }
+.edit .upload input[type=submit]{  width:50px; float:right; margin-top:8px;margin-right:20px;  cursor:pointer; border:#DDB7B8 1px solid;}
+.edit .upload input[type=submit]:hover{ border:#DDB7B8 solid 1px;}
+
+.edit .textarea{  width:600px; height:auto; margin:0px auto}
+.edit .textarea span{ margin-top:8px;}
+.edit .textarea textarea{ margin-top:8px; float:right;  width:490px; resize:vertical; height:50px;  margin-right:20px; border:#999 solid 1px}
+.edit .textlabel{ width:600px; height:auto; margin:0px auto}
+.edit .textlabel label{ display:block; margin-top:8px; width:500px; height:25px; text-align:right; margin-right:22px; color:#aaa; float:right;}
+/*edit buttom*/
+.edit .edit_submit{ clear:both; width:600px; margin:0px auto; height:50px; line-height:50px; text-align:center; margin-top:20px}
+.edit input[type=button], input[type=submit]{ width:50px; height:22px;margin-left:10px; cursor:pointer; border:#DDB7B8 1px solid}
+.edit input[type=button]:hover, input[type=submit]:hover{border:#00eeee solid 1px; background-color:White}
+/********teacher*********/
+.edit .divimg{ width:600px; height:auto; margin:0px auto; clear:both; margin-top:8px;}
+.edit .divimg img{ float:left; border:none; cursor:pointer; width:100px; height:100px; border:#ccc solid 1px;  margin-left:18px;  }
+.edit .imglab{width:600px; height:35px; line-height:35px; margin:0px auto;clear:both;}
+.edit .imglab label{ color:#aaa;  padding-left:70px; }
+
+
+

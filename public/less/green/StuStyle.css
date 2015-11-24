@@ -1,0 +1,69 @@
+﻿/*all*/
+.select{position:absolute; top:0px; left:0px; width:100%; display:none; padding-bottom:20px; border-bottom:#a1ca8e solid 2px; background:url('images/cx_bg.gif') repeat-x; background-color:#fff;}
+.select div{ height:30px; line-height:30px; margin-top:3px;}
+.select div span{ display:block; float:left; width:75px; margin-left:10px; }
+.select input{ height:18px; line-height:18px;float:right; width:200px;border:#999 1px solid; margin-top:5px;}
+.select select { float:right;height:20px;  margin-top:5px; line-height:20px; width:202px;border:#999 1px solid;}
+.select input[type=text]:focus,.select select:focus { border:red solid 1px;}
+.select input[type=button],.select input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+.select .select_main{   color:#333; width:600px; height:auto; margin:0px auto; }
+.select .select_main div{ float:left;width:300px;}
+.select .divbotton{ width:600px; height:50px; line-height:50px; clear:both; text-align:center;margin:0px auto;}
+.select .divbotton input{ float:none; margin-top:3px; margin-left:30px; cursor:pointer;}
+/*select2  单行*/
+.selects{position:absolute; top:0px; left:0px; width:100%; display:none; padding-bottom:20px; border-bottom:#a1ca8e solid 2px; background:url('images/cx_bg.gif') repeat-x; background-color:#fff;}
+.selects div{ height:30px; line-height:30px; margin-top:3px;}
+.selects div span{ display:block; float:left; width:75px; margin-left:10px; }
+.selects input{ height:18px; line-height:18px;float:right; width:310px;border:#999 1px solid; margin-top:5px;}
+.selects select { float:right;height:20px;  margin-top:5px; line-height:20px; width:312px;border:#999 1px solid;}
+.selects input[type=text]:focus,.selects select:focus { border:red solid 1px;}
+.selects input[type=button],.selects input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+.selects .select_main{   color:#333; width:400px; height:auto; margin:0px auto; margin-top:20px; }
+.selects .select_main div{ float:left;width:400px;}
+.selects .divbotton{ width:400px; height:50px; line-height:50px; clear:both; text-align:center;margin:0px auto;}
+.selects .divbotton input{ float:none; margin-top:3px; margin-left:30px; cursor:pointer;}
+
+ /*list*/
+#divlist{ width:100%; border:#a1ca8e solid 1px;height:auto; min-width:600px; float:left;}
+#divlist li{float:left;background:url('images/line_btm.gif') right top repeat-y ; text-align:center;  border-bottom:#a1ca8e solid 1px; overflow:hidden;}
+#divlist ul li input{  vertical-align:middle;  margin-top: -2px ; margin-left:2px;}
+#divlist ol li  input{ margin-top:6px;}
+
+ /*li class*/
+#divlist  .litime{width:13%; }
+#divlist  .lisex{width:6%; }
+#divlist  .liright{ background: none;  clear:right;}
+#divlist  .licheck{width:9% !important;   }
+#divlist  .checkthree{ line-height:normal !important;}
+#divlist  .checkthree input{ height:14px;  display: inline-block; margin-left:3px !important; margin-top:6px !important;}
+/* header*/
+#divlist ul{ font-weight:bold; height:30px; background:url('images/ul_title_tlbg.gif') repeat-x;}
+#divlist ul li{height:30px; line-height:30px ;}
+/* content*/
+#divlist ol li{height:25px; line-height:25px;}
+/* stu  userlist*/
+.stulist  li{  width:9%; }
+.stulist  .liright a{ margin-left:10px;}
+/* course  */
+.coulist  li{  width:8%; }
+.coulist  .liright {  width:7%; }
+ /* FcatalogInfo  */
+.fcatlist  li{  width:15%; }
+.fcatlist  .litime{  width:16% !important; }
+.fcatlist  .liright {  width:15%; }
+ /* ScatalogInfo */
+.scatlist  li{  width:13%; }
+/*stalklistinfo */
+.stalklist li{width:13%; }
+.stalklist .detail{width:26%; }
+.stalklist  .liright a{  margin-right:0px;  }
+/*tfinfo */
+.tflist li{ width:9%;}
+.tflist  .liright{  width:6%;  }
+/*banlist*/
+.banlist li{ width:8%;}
+.banlist .srcli{ width:30%}
+/*banlist*/
+.btypelist li{ width:10%;}
+.btypelist .linewstype{ width:35%;}
+.btypelist  .liright{  width:11%;  }

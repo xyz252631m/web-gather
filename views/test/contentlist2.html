@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/base.css" rel="stylesheet" />
+    <style>
+        .main { width: 880px; min-height: 600px; margin: 0 auto; border: #ccc solid 1px; }
+        .block-parent { width: 880px; height: 240px; position: relative; overflow: hidden; }
+        .block-list { position: absolute; height: 238px; }
+        .block-list a { display: block; width: 220px; height: 238px; float: left; background-color: #ccc; text-align: center; }
+        .block-list > img { width: 440px; height: 238px; float: left; }
+        .frist-m { float: left;  height: 238px; }
+    </style>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/test/blockMovings.js"></script>
+</head>
+<body>
+    <!--img list-->
+    <div class="main">
+        <div>
+            <input class="left-btn" type="button" value="left" />
+            <input class="right-btn" type="button" value="right" />
+        </div>
+        <div class="block-parent">
+            <div class="block-list">
+                <div class="frist-m">
+                    <a>1</a>
+                    <a>2</a>
+                    <a>3</a>
+                    <a>4</a>
+ 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../public/Scripts/jquery-1.10.2.js"></script>
+    <script>
+        $(".block-parent").eq(0).blockMoving({ count: 4, leftBtn: $(".left-btn"), rightBtn: $(".right-btn") });
+        //var list = $(".block-list")
+        //list.each(function (index,item) {
+        //    $(item).css("left", -width);
+        //})
+
+    </script>
+
+
+</body>
+</html>

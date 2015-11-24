@@ -1,0 +1,141 @@
+﻿/*all*/
+.select{position:absolute; top:0px; left:0px; width:100%; display:none; padding-bottom:20px; border-bottom:#bfc8cf solid 2px; background:url('images/cx_bg.gif') repeat-x; background-color:#fff;}
+.select div{ height:30px; line-height:30px; margin-top:3px;}
+.select div span{ display:block; float:left; width:75px; margin-left:10px; }
+.select input{ height:18px; line-height:18px;float:right; width:200px;border:#999 1px solid; margin-top:5px;}
+.select select { float:right;height:20px;  margin-top:5px; line-height:20px; width:202px;border:#999 1px solid;}
+.select input[type=text]:focus,.select select:focus { border:red solid 1px;}
+.select input[type=button],.select input[type=submit]{ width:50px; height:23px; line-height:23px; border:#bfc8cf 1px solid;}
+.select .select_main{   color:#333; width:600px; height:auto; margin:0px auto; }
+.select .select_main div{ float:left;width:300px;}
+.select .divbotton{ width:600px; height:50px; line-height:50px; clear:both; text-align:center;margin:0px auto;}
+.select .divbotton input{ float:none; margin-top:3px; margin-left:20px; cursor:pointer;}
+/*select2  单行*/
+.selects{position:absolute; top:0px; left:0px; width:100%; display:none; padding-bottom:20px; border-bottom:#bfc8cf solid 2px; background:url('images/cx_bg.gif') repeat-x; background-color:#fff;}
+.selects div{ height:30px; line-height:30px; margin-top:3px;}
+.selects div span{ display:block; float:left; width:75px; margin-left:10px; }
+.selects input{ height:18px; line-height:18px;float:right; width:310px;border:#999 1px solid; margin-top:5px;}
+.selects select { float:right;height:20px;  margin-top:5px; line-height:20px; width:312px;border:#999 1px solid;}
+.selects input[type=text]:focus,.selects select:focus { border:red solid 1px;}
+.selects input[type=button],.selects input[type=submit]{ width:50px; height:23px; line-height:23px; border:#bfc8cf 1px solid;}
+.selects .select_main{   color:#333; width:400px; height:auto; margin:0px auto; margin-top:20px; }
+.selects .select_main div{ float:left;width:400px;}
+.selects .divbotton{ width:400px;padding-left:50px; height:50px; line-height:50px; clear:both; text-align:center;margin:0px auto;}
+.selects .divbotton input{ float:none; margin-top:3px; margin-left:20px; cursor:pointer;}
+/*2-3行*/
+.selectst div{width:300px !important;}
+.selectst .select_main input{ width:210px !important;}
+.selectst .select_main select { width:212px !important;}
+.selectst .divbotton{width:250px !important; }
+ /*list*/
+#divlist{ width:100%; border:#bfc8cf solid 1px;height:auto; min-width:600px; float:left;}
+#divlist li{float:left;background:url('images/line_btm.gif') right top repeat-y ; text-align:center;  border-bottom:#bfc8cf solid 1px; overflow:hidden;}
+#divlist ul li input{  vertical-align:middle;  margin-top: -2px ; margin-left:2px;}
+#divlist ol li  input{ margin-top:6px;}
+ /*li class*/
+#divlist  .litime{width:13%; }
+#divlist  .lisex{width:6%; }
+#divlist  .lisrc{width:24%; }
+#divlist  .liorderno{width:14%; }
+#divlist  .lititle{width:14%; }
+#divlist  .liright{ background: none;  clear:right;}
+#divlist  .licheck{width:9% !important;   }
+#divlist  .checkthree{ line-height:normal !important;}
+#divlist  .checkthree input{ height:14px;  display: inline-block; margin-left:3px !important; margin-top:6px !important;}
+/* header*/
+#divlist ul{ font-weight:bold; height:30px; background:url('images/ul_title_tlbg.gif') repeat-x;}
+#divlist ul li{height:30px; line-height:30px ;}
+/* content*/
+#divlist ol li{height:25px; line-height:25px;}
+/* stu  userlist*/
+.stulist  li{  width:9%; }
+.stulist  .liright a{ margin-left:10px;}
+/* teacher  userlist*/
+.tealist  li{  width:9%; }
+.tealist  .liright a{ margin-left:10px;}
+/* course  */
+.coulist  li{  width:8%; }
+.coulist  .liright {  width:7%; }
+/* FcatalogInfo  */
+.fcatlist  li{  width:15%; }
+.fcatlist  .litime{  width:16% !important; }
+.fcatlist  .liright {  width:15%; }
+/* ScatalogInfo */
+.scatlist  li{  width:13%; }
+/*stalklistinfo */
+.stalklist li{width:13%; }
+.stalklist .detail{width:26%; }
+.stalklist  .liright a{  margin-right:0px;  }
+/*tfinfo */
+.tflist li{ width:9%;}
+.tflist  .liright{  width:6%;  }
+/*banlist*/
+.banlist li{ width:8%;}
+.banlist .srcli{ width:30%}
+/*banlist*/
+.btypelist li{ width:10%;}
+.btypelist .linewstype{ width:35%;}
+.btypelist  .liright{  width:11%;  }
+/*blist*/
+.blist li{ width:10%;}
+/*basetypelist*/
+.basetypelist li{width:10%;}
+.basetypelist .linewstype{width:40%;}
+.basetypelist  .liright{  width:41%;  }
+/*courtypelist*/
+.courtypelist li{width:10%;}
+.courtypelist .liclasstype{width:40%;}
+.courtypelist  .liright{  width:40%;  }
+/*newslist*/
+.newslist li{width:7%;}
+.newslist  .liint{ width:6%; }
+/*newstype*/
+.newstype li{width:10%;}
+.newstype .linewstype{ width:41%;}
+.newstype .liright{  width:40%;}
+/*linklist*/
+.linklist li{width:26%;}
+.linklist  .liright{width:13%;}
+/*userlist*/
+.userlist li{width:13%;}
+/*userlog*/
+.userlog li{ width:15%}
+.userlog .liright{ width:16%}
+/*rolelist*/
+.rolelist li{width:22%}
+.rolelist .liright{width:25%}
+/*powerlist*/
+.powerlist li{width:16%;}
+.powerlist .srcli{width:27%;}
+
+/*moneyloglist*/
+.moneyloglist li{ width:11%}
+.moneyloglist .liright{ width:11%}
+/*deltaloglist*/
+.deltaloglist li{ width:11%}
+.deltaloglist .liright{ width:11%}
+/*xuelist*/
+.xuelist li{width:23%}
+.xuelist .liright{ width:22%}
+/*stuorderlist*/
+.stuorderlist li{width:10%}
+.stuorderlist .liright{ width:11%}
+
+/*activitylist*/
+.activitylist li{width:9%}
+.activitylist .liimgsrc {width:11%}
+.activitylist .liright{width:9%  }
+/*actwinlist*/
+
+.actwinlist li{width:10%}
+.actwinlist .iswin{width:10%}
+.actwinlist .listarttime{width:21%}
+.actwinlist .liright{ width:10%}
+
+/*cvideolist*/
+
+.cvideolist li{width:9%}
+ 
+.cvideolist .liright{width:8%  }
+
+

@@ -1,0 +1,56 @@
+﻿//////base
+@alink: #067c99;    //a链接颜色
+//规格上的颜色样式
+@a-color: #ffffff;            @white:#fff;   //白色
+@b-color: #067c99;         @searchcolor: #067c99; //搜索边框的顶部颜色
+@c-color: #4dbbd4;        @titlebg: #4dbbd4;     //标题背景色
+@d-color: #f5f5f5;          @listtitlebg: #f5f5f5; //列表标题颜色
+@e-color: #d9d9d9;        @borcolor: #d9d9d9; //边框颜色
+@f-color: #ff8800;          @alinkhover: #f80;    //a:hover 颜色，金额字体颜色
+@g-color: #eeeeee;
+@h-color: #10b6c9;        @searchbtnbg: #10b6c9;    //搜索btn背景颜色
+@i-color: #313131;          @defcolor:#313131;   //默认字体---base里已设为全局默认样式
+@j-color: #737373;          //文本框内的提示字颜色  HTML5 中可不设置
+@k-color:#fad1a5;           //登录错误块  边框色
+@l-color: #fffedf;              //登录错误块  背景色
+@m-color: #ffe6cb;          //提示信息块  边框色
+@n-color: #fefff1;             //提示信息块  背景色
+@o-color: #d80000;          //文本框---错误---边框色
+//tool    a,b,c 对应规格文档里的A,B,C
+.height(@num) { height:@num; line-height:@num; }
+.bold(@a: bold) { font-weight: @a; }
+.normal(@a: normal) { font-weight: @a; }
+.valign(@a: middle) { vertical-align: @a; } 
+//font-size
+.font(@num) { font-size: @num; }
+.font12(@num:12px){ .font(@num);}   //c
+.font14(@num:14px){ .font(@num); }   //b
+.font18(@num:18px){ .font(@num);}  //a
+//margin-top
+.mar(@num) { margin-top: @num; } 
+.mar5 (@num:5px){ .mar(@num) }     //c
+.mar10(@num:10px) { .mar(@num) }   //b
+.mar15 (@num:15px){ .mar(@num) } 
+.mar20(@num:20px) { .mar(@num) }   //a
+
+//////css
+//table
+.titlefont(@fontsize:14px){ font-size:@fontsize; .bold; color:@a-color;}
+//button
+.basebtn(@width,@height,@bgcolor,@display){color:@a-color; display: @display;background-color: @bgcolor; width: @width; height: @height; line-height: @height;border: none;border-radius:3px;  }
+//blue  btn
+.btnblue(@width,@height,@display: block) { .basebtn(@width,@height,@h-color,@display);
+     &:hover{ opacity:.7; }
+}
+//deep blue btn
+.btndeepblue(@width,@height,@display: block) { .basebtn(@width,@height,@b-color,@display);
+     &:hover{ opacity:.6; }  
+}
+//orange btn
+.btnorange(@width,@height,@display: block){ .basebtn(@width,@height,@f-color,@display);
+      &:hover{ opacity:.8; }  
+}
+//input -- type:text
+.inputborder(@color: #d9d9d9) { border: @color solid 1px; }
+.errorborder(@color:red){ border:@color solid 1px;}
+

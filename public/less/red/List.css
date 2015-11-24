@@ -1,0 +1,146 @@
+﻿input[type=text]{ height:18px; line-height:18px; width:200px;border:#999 1px solid;}
+select {height:20px;  margin-top:5px; line-height:20px; width:202px;border:#999 1px solid;}
+input[type=text]:focus,input[type=password]:focus, select:focus { border:red solid 1px;}
+input[type=button], input[type=submit]{ width:50px; height:22px;margin-left:10px; cursor:pointer; border:#DDB7B8 1px solid;}
+input[type=button]:hover, input[type=submit]:hover{border:#00eeee solid 1px; background-color:White }
+/*message*/
+#messselect{position:absolute; top:0px; left:0px; width:100%; display:none;padding-bottom:20px; border:#DDB7B8 solid 3px; background-color:#fff; }
+#messselect div{ height:30px; line-height:30px; margin-top:3px;}
+#messselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#messselect input{ height:18px; line-height:18px;float:right; width:200px;border:#999 1px solid; margin-top:5px;}
+#messselect select { float:right; margin-top:5px; }
+#messselect input[type=text]:focus{ border:red solid 1px;}
+#messselect input[type=button],#messselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#DDB7B8 1px solid;}
+#messselect .select_main{   color:#333; width:600px; height:auto; margin:0px auto; }
+#messselect .select_main div{ float:left;width:300px;}
+#messselect .divbotton{ width:600px; height:50px; line-height:50px; clear:both; text-align:center;margin:0px auto;}
+ #messselect .divbotton input{ float:none;}
+#messtitle{ width:100%; height:35px; border-bottom:#DDB7B8 solid 1px; text-align:center;margin:0px auto;}
+#messtitle input{ margin-top:5px;}
+#messlist{ width:100%; border:#DDB7B8 solid 1px;height:auto; min-width:600px; float:left;}
+#messlist  li{ float:left; width:9%; background:url('images/line_btm.gif') right top repeat-y; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#DDB7B8 solid 1px; overflow:hidden;}
+#messlist  li input{ margin-top:5px}
+#messlist  .timeli{width:15%;}
+#messlist  .mmcontent{width:25%;}
+#messlist .liright{ background: none;width:6% !important; clear:right;}
+/*Requetion*/
+#requselect{position:absolute; top:0px; left:0px; width:100%; display:none;padding-bottom:20px; border:#DDB7B8 solid 3px; background-color:#fff; }
+#requselect div{ height:30px; line-height:30px;margin-top:3px;}
+#requselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#requselect input{ height:18px; line-height:18px;float:right; width:200px;border:#999 1px solid; margin-top:5px;}
+#requselect select { float:right; margin-top:5px; }
+#requselect input[type=text]:focus{ border:red solid 1px;}
+#requselect input[type=button],#requselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#DDB7B8 1px solid;}
+#requselect .select_main{   color:#333; width:600px; height:auto; margin:0px auto; }
+#requselect .select_main div{ float:left;width:300px;}
+#requselect .divbotton{ width:600px; height:50px;line-height:50px; clear:both; text-align:center;margin:0px auto;}
+#requselect  .divbotton input{ float:none;}
+#requtitle{ width:100%; height:35px; border-bottom:#DDB7B8 solid 1px; text-align:center;margin:0px auto;}
+#requtitle input{ margin-top:5px;}
+#requlist{ width:100%; border:#DDB7B8 solid 1px;height:auto; min-width:600px; float:left;}
+#requlist  li{ float:left; width:13%; background:url('images/line_btm.gif') right top repeat-y; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#DDB7B8 solid 1px; overflow:hidden;}
+#requlist  li input{ margin-top:5px}
+#requlist .mmcontent{ width:35%;}
+#requlist .litime{ width:15%;}
+#requlist .liright{ background: none;  width:15%;clear:right;}
+
+/*ulogetion*/
+#ulogselect{position:absolute; top:0px; left:0px; width:100%; display:none; padding-bottom:20px;border:#DDB7B8 solid 3px; background-color:#fff; }
+#ulogselect div{ height:30px; line-height:30px;margin-top:2px;}
+#ulogselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#ulogselect input{ height:18px; line-height:18px;float:right; width:200px;border:#999 1px solid; margin-top:5px;}
+#ulogselect select { float:right; margin-top:5px; }
+#ulogselect input[type=text]:focus{ border:red solid 1px;}
+#ulogselect input[type=button],#ulogselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#DDB7B8 1px solid;}
+#ulogselect .select_main{   color:#333; width:600px; height:auto; margin:0px auto; }
+#ulogselect .select_main div{ float:left;width:300px;}
+#ulogselect .divbotton{ width:600px; height:40px; line-height:40px;clear:both; text-align:center;margin:0px auto;}
+ #ulogselect .divbotton input{ float:none;}
+#ulogtitle{ width:100%; height:35px; border-bottom:#DDB7B8 solid 1px; text-align:center;margin:0px auto;}
+#ulogtitle input{ margin-top:5px;}
+#uloglist{ width:100%; border:#DDB7B8 solid 1px;height:auto; min-width:600px; float:left;}
+#uloglist  li{ float:left; width:14%; background:url('images/line_btm.gif') right top repeat-y; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#DDB7B8 solid 1px; overflow:hidden;}
+#uloglist .ipli{ width:16%;}
+#uloglist .liright{ background: none; width:19%; clear:right;}
+/*slogetion*/
+#slogselect{position:absolute; top:0px; left:0px; width:100%; display:none; padding-bottom:20px; border:#DDB7B8 solid 3px; background-color:#fff; }
+#slogselect div{ height:30px; line-height:30px;margin-top:3px;}
+#slogselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#slogselect input{ height:18px; line-height:18px;float:right; width:200px;border:#999 1px solid; margin-top:5px;}
+#slogselect select { float:right; margin-top:5px;border:none; border:#999 1px solid;}
+#slogselect input[type=text]:focus,#slogselect select:focus{ border:red solid 1px;}
+#slogselect input[type=button],#slogselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#DDB7B8 1px solid;}
+#slogselect .select_main{   color:#333; width:600px; height:auto; margin:0px auto; }
+#slogselect .select_main div{ float:left;width:300px;}
+#slogselect .divbotton{ width:600px; height:50px; line-height:50px; clear:both; text-align:center;margin:0px auto;}
+ #slogselect .divbotton input{ float:none;}
+#slogtitle{ width:100%; height:35px; border-bottom:#DDB7B8 solid 1px; text-align:center;margin:0px auto;}
+#sloglist{ width:100%; border:#DDB7B8 solid 1px;height:auto; min-width:600px; float:left;}
+#sloglist  li{ float:left; width:12%; background:url('images/line_btm.gif') right top repeat-y; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#DDB7B8 solid 1px; overflow:hidden;}
+#sloglist  li input{ margin-top:5px}
+#sloglist .ipli{}
+#sloglist .liright{ background: none;  width:16%;clear:right;}
+/*poweretion*/
+#powerselect{position:absolute; top:0px; left:0px; width:100%; display:none; height:170px; border:#DDB7B8 solid 3px; background-color:#fff; }
+#powerselect div{ height:30px; line-height:30px;}
+#powerselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#powerselect input{ height:18px; line-height:18px;float:right; width:200px;border:#999 1px solid; margin-top:5px;}
+#powerselect select { float:right; margin-top:5px; }
+#powerselect input[type=text]:focus{ border:red solid 1px;}
+#powerselect input[type=button],#powerselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#DDB7B8 1px solid;}
+#powerselect .select_main{   color:#333; padding-right:40px;  width:600px; text-align:center; height:auto; margin:0px auto; }
+#powerselect .select_main div{ width:300px; margin:0px auto;margin-top:5px; }
+#powerselect .divbotton{ width:600px; height:40px; line-height:40px; clear:both; text-align:center;margin:0px auto;}
+ #powerselect .divbotton input{ float:none;}
+#powertitle{ width:100%; height:35px; border-bottom:#DDB7B8 solid 1px; text-align:center;margin:0px auto;}
+#powertitle input{ margin-top:5px;}
+#powerlist{ width:100%; border:#DDB7B8 solid 1px;height:auto; min-width:600px; float:left;}
+#powerlist  li{ float:left; width:16%; background:url('images/line_btm.gif') right top repeat-y; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#DDB7B8 solid 1px; overflow:hidden;}
+#powerlist  li input{ margin-top:5px}
+#powerlist .srcli{ width:27%; }
+#powerlist .liright{ background: none; clear:right;}
+/*backup*/
+#backupselect{position:absolute; top:0px; left:0px; width:100%; display:none; height:300px; border:#DDB7B8 solid 3px; background-color:#fff; }
+#backupselect div{ height:30px; line-height:30px;}
+#backupselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#backupselect input{ height:18px; line-height:18px; width:300px;border:#999 1px solid; margin-top:5px;}
+#backupselect select { float:right; margin-top:5px; }
+#backupselect input[type=text]:focus{ border:red solid 1px;}
+#backupselect input[type=button],#backupselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#DDB7B8 1px solid;}
+#backupselect .select_main{   color:#333; width:400px; height:auto; margin:20px auto;   }
+#backupselect .select_main div{ float:left;}
+#backupselect .divbotton{ width:400px; height:50px; clear:both; text-align:center;margin:0px auto; padding-top:20px;}
+#backuptitle{ width:100%; height:35px; line-height:35px; border-bottom:#DDB7B8 solid 1px; text-align:center;margin:0px auto;}
+#backuptitle input{ margin-top:5px;}
+#backuplist{ width:100%; border:#DDB7B8 solid 1px;height:auto; min-width:600px; float:left;}
+#backuplist  li{ float:left; width:15%; background:url('images/line_btm.gif') right top repeat-y; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#DDB7B8 solid 1px; overflow:hidden;}
+#backuplist  li input{ margin-top:5px}
+#backuplist .srcli{ width:40%;}
+#backuplist .liright{ background: none; clear:right;}
+
+/*resource*/
+#resselect{position:absolute; top:0px; left:0px; width:100%; display:none;padding-bottom:20px;  border:#DDB7B8 solid 3px; background-color:#fff; }
+#resselect div{ height:30px; line-height:30px;margin-top:3px;}
+#resselect div span{ display:block; float:left; width:60px; margin-left:10px; text-align:right; }
+#resselect input{ height:18px; line-height:18px; float:right;width:200px;border:#999 1px solid; margin-top:5px;}
+#resselect select { float:right; margin-top:5px; }
+#resselect input[type=text]:focus{ border:red solid 1px;}
+#resselect input[type=button],#resselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#DDB7B8 1px solid;}
+#resselect .select_main{   color:#333; width:600px; height:auto; margin:0px auto; }
+#resselect .select_main div{ float:left;width:300px;}
+#resselect .divbotton{ width:600px; height:50px; line-height:50px;clear:both; text-align:center;margin:0px auto;}
+#resselect  .divbotton input{ float:none;}
+ 
+#reslist{ width:100%; border:#DDB7B8 solid 1px;height:auto; min-width:600px; float:left;}
+#reslist  li{ float:left; width:8%; background:url('images/line_btm.gif') right top repeat-y; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#DDB7B8 solid 1px; overflow:hidden;}
+#reslist  li input{ margin-top:5px}
+#reslist .srcli{ width:13%;}
+#reslist .litime{ width:14%;}
+#reslist .liright{ background: none; clear:right;}

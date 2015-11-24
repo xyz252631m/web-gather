@@ -1,0 +1,28 @@
+﻿/*edit*/
+.edit{ height:auto;width:100%}
+.edit .edit_top{ width:400px; height:auto; margin:0px auto}
+.edit .edit_top div{ height:45px; line-height:45px; width:400px; float:left}
+.edit  span{ float:left; display:block; width:70px; text-align:right}
+.edit .edit_top input,.edit .edit_top select{margin-top:12px; float:right; height:20px;line-height:18px;width:320px;border:#999 solid 1px}
+.edit .edit_top input:focus,.edit .edit_top select:focus{border:#ff0000 solid 1px}
+.edit .edit_top select{ width:322px;height:22px}
+.edit .edit_top .txtremark{width:322px;float:right;height:15px;margin-left:10px; line-height:15px; color:#a1ca8e}
+.edit .upload{ width:400px;height:35px;line-height:35px;margin:0px auto; padding-top:8px; clear:both;}
+.edit .upload input[type=file]{width:256px;height:20px;float:right;margin-right:4px; border:#999 solid 1px;margin-top:8px;  line-height:18px; }
+.edit .upload input[type=submit]{ width:50px;float:right;margin-top:8px;  cursor:pointer; border:#a1ca8e 1px solid;}
+.edit .upload input[type=submit]:hover{border:#a1ca8e solid 1px;}
+.edit .textarea{  width:400px; height:auto;margin:0px auto}
+.edit .textarea span{ margin-top:8px;}
+.edit .textarea textarea{ margin-top:8px;float:right;  width:320px; resize:vertical; height:50px;   border:#999 solid 1px}
+.edit .textlabel{ width:400px; height:auto;margin:0px auto}
+.edit .textlabel label{ display:block;margin-top:8px; width:222px; height:25px; text-align:right;  color:#aaa; float:right;}
+/*edit buttom*/
+.edit .edit_submit{ clear:both;width:600px;margin:0px auto;height:50px; line-height:50px; text-align:center; margin-top:30px}
+.edit input[type=button], input[type=submit]{ width:50px; height:22px;margin-left:10px; cursor:pointer; border:#a1ca8e 1px solid}
+.edit input[type=button]:hover, input[type=submit]:hover{border:#00eeee solid 1px; background-color:White}
+
+/*banner edit*/
+#banneredit  .divimg{ width:100%; text-align:center; height:auto;   float:left;  padding:10px 0px;}
+#banneredit  .divimg img{  border:#a1ca8e solid 1px; }
+#banneredit  .imglab{width:980px;height:25px; line-height:25px; margin:0 auto; }
+#banneredit  .imglab label{color:#aaa; }

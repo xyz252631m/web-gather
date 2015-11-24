@@ -1,0 +1,78 @@
+﻿* {margin:0; padding:0; outline:none;}
+html {overflow:hidden;  height:100%; overflow-y:auto !important; }
+body{overflow:hidden;  height:100%;overflow-y:auto !important;   font: 12px/1 "微软雅黑",Arial, Helvetica, sans-serif,"\5b8b\4f53", sans-serif; background-color:white; color:#333333}
+li{ list-style:none;text-overflow:ellipsis; white-space:nowrap; overflow:hidden; }
+a{ text-decoration:none;color:#038bca  ;blr:expression(this.onFocus=this.blur());}
+a:focus {outline: thin dotted}
+a:active,a:hover { outline: 0}
+button,input,select,textarea {font-family: inherit; font-size: 100%; margin: 0}
+span{ text-align:right;}
+.cleardiv{ clear:both;}
+li label{ line-height:30px;  }
+li input[type=checkbox]{ vertical-align:middle !important;  margin-left:3px !important; }
+.licheck{width:9% !important;   }
+.licheck label{ line-height:30px;  }
+.licheck input{ vertical-align:middle !important;  margin-left:3px !important; margin-top: -2px !important;}
+.checktwo input{vertical-align:middle !important;  margin-left:3px !important; margin-top: -2px !important;}
+.checkthree{ line-height:normal !important;}
+.checkthree input{ height:14px;  display: inline-block; margin-left:3px !important; margin-top:6px !important;}
+/*botton  style*/
+.btnbor{ width:73px; height:23px; border:#ccc solid 1px; cursor:pointer; margin-right:10px;}
+.btnbor:hover{border:#00eeee solid 1px;  background-color:White }
+/*div*/
+.divrelative{  padding-right:3px;}
+.divIsNull { height:30px; line-height:30px; width:100%; float:left; text-align:center;}
+.main_title{width:100%;border:#ccc solid 1px;height:30px;line-height:30px;text-align:center;font-weight:bold; font-family: @黑体;}
+/*分页控件*/      
+#pagediv{ text-align:center; width:100%; height:30px;  line-height:30px; font-size:13px; font-family: inherit; }
+#pagediv a{ color:#333}
+#pagediv a:hover{ color:Red}
+#pagediv span{ float:left; height:30px; line-height:30px; margin-left:10px;}
+#pagediv .txt_go{ width:2em; border:#999 solid 1px;  font-size: 10px;height:16px; vertical-align:text-bottom; margin-left:3px; margin-right:3px; }
+#pagediv .go_bg{ display:block;float:right;margin-top:4px;background:url('images/go.gif') no-repeat;width:26px; height:20px; margin-right:20px;  cursor:pointer; }
+#pagediv  .page_main{ width:300px; height:30px; float:right; margin-right:100px; line-height:30px;} 
+/* 表格头部*/
+ul{ font-weight:bold; height:30px; background:url('images/ul_title_tlbg.gif') repeat-x;}
+ul li{height:30px !important; line-height:30px !important;}
+/*li 背景 变色*/
+.liliaa{ background-color:#f2faef !important;}  /*单行*/
+.lilibb{ background-color:#e6f5e0 !important;}
+/*权限设置背景*/
+#ulitem li{background:none !important;}
+#ulitem li label img{ cursor:pointer}
+/*内容页标题背景*/
+.alltitle{ height:60px; min-width:600px; background:url('images/content-bg.gif') repeat-x;  }
+    .alltitle span{text-indent:10px; float:left; height:30px; line-height:30px; margin-left:10px;}
+    .alltitle .left{ float:left;width:17px; height:30px;border-left:#BBC9D2 solid 1px;}
+    .alltitle .center{width:85px; float:left;  height:30px; line-height:30px;  text-align:center; font-weight:bold; background:url('images/top_bt.jpg') no-repeat; }
+    .alltitle .right{width:16px;   float:right; right:0px; height:30px;border-right:#BBC9D2 solid 1px;}
+.titlebtn{ clear:both; width:100%; height:35px;  min-width:620px;text-align:center;margin:0px auto;}
+.titlebtn input{  margin-top:2px  }
+.btmheight{ height:35px;}
+/**/
+/*查询背景*/
+.bgimages{  border:none !important; border-bottom:#a1ca8e solid 2px !important;  background:url('images/cx_bg.gif') repeat-x;}
+/*查询按钮背景*/
+.bgselect{ border:none !important; background:url('images/cx_hover.gif') no-repeat;}
+/*添加按钮背景*/
+.bgadd{ border:none !important; background:url('images/tj_hover.gif') no-repeat;}
+/*删除按钮背景*/
+.bgdelete{ border:none !important; background:url('images/sc_hover.gif') no-repeat;}
+/*修改按钮背景*/
+.bgupdate{ border:none !important; background:url('images/xg_hover.gif') no-repeat;}
+/*取消按钮背景*/
+.bgcancel{ border:none !important; background:url('images/qx_hover.gif') no-repeat;}
+/*备份按钮背景*/
+.bgbackup{ border:none !important; background:url('images/bf_hover.gif') no-repeat;}
+/*返回按钮背景*/
+.bgback{ border:none !important; background:url('images/fh_hover.gif') no-repeat;}
+/*修改密码背景*/
+.bgchangepwd{ border:none !important; background:url('images/xgmm_hover.gif') no-repeat;}
+/*重置背景*/
+.bgreset{ border:none !important; background:url('images/cz_hover.gif') no-repeat;}
+.bgreset:hover{ border:none !important; background:url('images/cz_link.gif') no-repeat !important;}
+/*上传背景*/
+.bgupload{ border:none !important; background:url('images/sc2_hover.gif') no-repeat;}
+.bgupload:hover{ border:none !important; background:url('images/sc2_hover.gif') no-repeat !important;}
+
+

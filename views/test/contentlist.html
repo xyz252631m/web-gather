@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/base.css" rel="stylesheet" />
+    <style>
+        .main { width: 880px; min-height: 600px; margin: 0 auto; border: #ccc solid 1px; }
+
+        .block-parent { width: 880px; height: 240px; position: relative; overflow: hidden; }
+        .block-list { position: absolute;height: 238px; }
+        .block-list > a { display: block; width: 880px; height: 238px; position: absolute; }
+        .block-list > img { width: 440px; height: 238px; float:left; }
+        .block-parent ul { position: absolute; bottom: 10px; right: 20px; z-index: 999; }
+        .block-parent li { width: 16px; height: 15px; float: left; line-height: 15px; margin-left: 10px; }
+        .block-parent ul a { display: block; width: 16px; height: 15px; text-align: center; font-size: 12px; border-radius: 7px; }
+        .block-parent ul a:hover { background-color: #bbb; color: #fff; }
+        .block-parent ul .active { background-color: #ccc; color: #fff; }
+    </style>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/test/blockMoving.js"></script>
+</head>
+<body>
+    <!--img list-->
+    <div class="main">
+        <div>
+            <input class="left-btn" type="button" value="left" />
+            <input class="right-btn"  type="button" value="right" />
+        </div>
+        <div class="block-parent">
+            <div class="block-list">
+                <img src="images/218828-106.jpg" />
+                <img src="images/222021-106.jpg" />
+                <img src="images/260951-106.jpg" />
+                <img src="images/221268-106.jpg" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(".block-parent").eq(0).blockMoving({ count: 2, leftBtn: $(".left-btn"), rightBtn: $(".right-btn") });
+    </script>
+
+
+</body>
+</html>

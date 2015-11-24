@@ -1,0 +1,380 @@
+﻿/*all*/
+input[type=text]{ height:18px; line-height:18px; width:200px;border:#999 1px solid;}
+select {height:20px;  margin-top:5px; line-height:20px; width:202px;border:#999 1px solid;}
+input[type=text]:focus,input[type=password]:focus, select:focus { border:red solid 1px; }
+input[type=button], input[type=submit]{ width:50px; height:22px;margin-left:10px; cursor:pointer; border:#a1ca8e 1px solid;}
+input[type=button]:hover, input[type=submit]:hover{border:#00eeee solid 1px; background-color:White }
+.main_title{width:100%;border:#a1ca8e solid 1px;height:30px;line-height:30px;text-align:center;font-weight:bold; font-family: @黑体;}
+.bodynohiddle{overflow-y:auto; }
+.txtloginname{ font-weight:bold;}
+/*pagetop*/
+#mastertop{ float:left; width:100%;min-width:800px;}
+#mtop_t{ height:60px; width:100%;  background:url('images/top_mainbg_03.gif')  repeat-x; color:White;}
+#mtop_t .logoimg{ width:368px; height:60px;float:left; background:url('images/topltimg.gif')  no-repeat}
+#mtop_t span{ display:block; width:auto; min-width:420px;  padding-top:20px; padding-right:150px; text-indent:20px; text-align:left; }
+#mtop_t  .loginout{ position:absolute; right:15px; top:20px;  width:56px; height:25px; color:White; background:url('images/out.gif') no-repeat}
+#mtop_t  .returnindex{ position:absolute; right:85px; top:20px;  width:56px; height:25px; color:White; background:url('images/back.gif') no-repeat}
+#mtop_b{ height:17px; width:100%;background:url('images/top_bottombg.gif') repeat-x}
+#mcontent{ width:600px; height:auto; float:right;margin-left:0px; margin-right:1px; border:#a1ca8e solid 1px; }
+/*pageleft*/
+#page_left{ width:190px;height:100%;overflow:hidden; }
+#meuntree{   width:182px; height:100%;float:left;margin-left:1px; margin-right:0px; background-color:#f1f5f0}
+#meuntree .mtree_title{ width:100%; height:35px; line-height:35px;  text-align:center;
+                         background:url('images/main_14.gif') 40px center no-repeat; font-size:18px; font-weight:bold;}
+#ultxt{ width:100%;  overflow:hidden;  }
+#ultxt li{ width:100%;background:url('images/menu_bgs.gif') no-repeat; height:30px; line-height:30px; float:left;  
+          text-align:center;  }
+#ultxt li a{  display:block; width:100%; height:30px; outline:none;color:#003366; font-weight:bold;}
+#ultxt li a:hover{ color:red; }
+#page_left .liline{height:5px !important;background:url('images/menu_topline.gif') !important ; }
+    .ulhide{ display:none; padding-left:1px;}
+    .ulhide li{ height:26px !important;background:url('images/menu_bg1.gif') !important ;  line-height:26px !important;}
+    .ulhide li:hover{background:url('images/menu_bg2.gif')  !important; }
+    .ulhide li a{color:#333 !important; font-weight:normal !important; }
+#left_minfo{  text-align:center; border:#bcd0b9 solid 1px;background-color:#f1f5f0}
+#left_minfo p{height:30px; line-height:30px}
+ .ptitle{ text-align:center; height:30px; line-height:30px;background:url('images/menu_bgs.gif') no-repeat; }
+  .ptitle a{ display:block; width:100%; height:30px;outline:none;color:#003366;font-weight:bold;  }
+ .ptitle a:hover{color:red;}
+  #left_minfo  .ptcont{height:26px;background:url('images/line.gif')  bottom no-repeat;  line-height:26px}
+  
+  
+#left_l{ width:5px; position:absolute; right:0px; top:0px; float:right; height:100%;  
+         background:#e6f5e0; border-left:#a1ca8e solid 1px;  cursor:pointer;}             
+#left_l:hover{background:none; background-color:#a1ca8e;  }
+#left_l .divleftfloat{width:4px;height:99px;position:relative; top:40%;background:url('images/leftdivbd.jpg') left center no-repeat;}
+#left_l .divleftfloat_right{filter:progid:DXimagesTransform.Microsoft.Basicimages(rotation=2);  
+                        -moz-transform:rotate(180deg); -webkit-transform:rotate(180deg);}           
+/*about*/              
+#abouttop{ height:30px; background:url('images/content-bg.gif') repeat-x;}
+#abouttop .left{ float:left;width:17px; height:30px; border-left:#a1ca8e solid 1px;}
+#abouttop .center{width:85px; float:left;  height:30px; line-height:30px;  text-align:center; font-weight:bold; background:url('images/top_bt.jpg') no-repeat; }
+#abouttop .right{width:16px;   float:right; height:30px;border-right:#a1ca8e solid 1px;} 
+#aboutmain .top_title{ font-weight: bold;color: #395a7b; margin-top:30px; text-indent:20px;}
+#aboutmain #main_tip{ padding-left:20px; margin-top:20px;color: #666666; }
+#aboutmain #main_tip dt{  text-indent:20px; height:20px; line-height:20px; background:url('images/ts.gif') no-repeat;}
+#aboutmain #main_tip dd{text-indent:20px; margin-top:15px;}
+#main_info{ padding-left:20px; margin-top:40px; }
+#main_info dt{ width:90px; height:100px; float:left; background:url('images/admin_p.gif') no-repeat; }
+#main_info dd{ height:33px;  line-height:33px; text-indent:60px;  }
+#user_title{ margin-top:20px; padding:0px 20px; height:30px; }
+#user_title div{ color:White; font-weight:bold; text-indent:20px; background:url('images/title_bg2.gif') repeat-x;  height:25px; line-height:25px;}
+#user_info{ }
+#user_info dl{ width:560px;}
+#user_info dt{ width:120px; text-align:right; height:30px; line-height:30px;  float:left;}
+#user_info dd{width:160px; height:30px; line-height:30px; float:left; color:red;}
+#main_bottom{ float:left; width:100%; padding-left:30px;}
+#main_bottom .site_Email{ text-indent:24px;  margin-top:10px; background:url('images/icon-mail2.gif') no-repeat;}
+#main_bottom .site_red{  text-indent:24px;margin-top:10px; background:url('images/icon-phone.gif') no-repeat;}
+/*newsinfo*/
+#newsselect{position:absolute; top:0px; left:0px; width:100%; display:none; padding-bottom:20px;  border-bottom:#a1ca8e solid 2px ;  background:url('images/cx_bg.gif') repeat-x;}
+#newsselect div{ height:30px; line-height:30px; margin-top:3px;}
+#newsselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#newsselect input{ height:18px; line-height:18px;float:right; width:200px;border:#999 1px solid; margin-top:5px;}
+#newsselect select { float:right; margin-top:5px; }
+#newsselect input[type=text]:focus{ border:red solid 1px;}
+#newsselect input[type=button],#newsselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+#newsselect .select_main{   color:#333; width:600px; height:auto; margin:0px auto; }
+#newsselect .select_main div{ float:left;width:300px;}
+#newsselect .divbotton{ width:600px; height:50px; line-height:50px; clear:both; text-align:center;margin:0px auto;}
+ #newsselect .divbotton input{ float:none;}
+#newstitle{ width:100%; height:35px; border-bottom:#a1ca8e solid 1px; text-align:center;margin:0px auto;}
+#newstitle input{ margin-top:5px;}
+#newlist{ width:100%; border:#a1ca8e solid 1px;height:auto; min-width:600px; float:left;}
+#newlist  li{ float:left; width:7%; background:url('images/line_btm.gif') right top repeat-y ; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden;}
+#newlist  li  input{ margin-top:5px;}
+#newlist  .litime{ width:13%; }
+#newlist  .liint{ width:6%; }
+#newlist  .lititle{ width:14%; }
+#newlist .liright{ background: none;  clear:right;}
+/*newsadd*/
+#newsadd{ display:none;}
+/*NewsEdit*/
+#NewsEdit{ height:100%;  width:100%; float:left; }
+#NewsEdit .edit_top{ width:600px; margin:0px auto;}
+#NewsEdit .edit_top div{ height:35px; line-height:35px; width:290px; float:left;}
+#NewsEdit .edit_top span{ float:left; display:block; width:80px; }
+#NewsEdit .edit_top input,#NewsEdit .edit_top select{ margin-top:8px;float:right;}
+#NewsEdit  .edit_content{ float:left; width:100%; height:100%;margin-top:10px;}
+
+#NewsEdit .edit_submit{ float:left;  margin-top:10px; }
+#NewsEdit .description { width:600px;  margin:0px auto;}
+#NewsEdit .description div{   width:600px;  margin:0px auto;float:left;}
+#NewsEdit .description div span{ float:left; display:block; width:80px;}
+#NewsEdit .description textarea{ width:492px; height:40px;float:right; margin-right:18px; padding:0px; max-height:40px; max-width:492px;}
+#NewsEdit .isshowindex{ width:600px; margin:0px auto;}
+#NewsEdit .isshowindex div{width:290px; height:35px; line-height:35px;   float:left;}
+#NewsEdit .isshowindex div span{ float:left; display:block; width:80px;}
+#NewsEdit .isshowindex div input  { vertical-align:middle  }
+#NewsEdit .isshowindex div input[type=text]{ margin-top:8px;float:right;} 
+#NewsEdit .divupload{width:600px; margin:0px auto; display:none;}
+#NewsEdit .divupload div{width:600px;    float:left; height:35px; line-height:35px; }
+#NewsEdit .divupload span{ float:left; display:block; width:80px; }
+#NewsEdit .divupload .upload{ width:427px;float:right; height:20px; border:#999 solid 1px;margin-top:8px;  line-height:18px; }
+#NewsEdit .divupload .btnfile{ float:right;margin-top:8px;  margin-right:20px; }
+#NewsEdit .divupload label{ color:#a1ca8e;margin-left:80px;}
+#NewsEdit  .divimg{   height:auto !important;width:684px; margin:0px auto; display:none;   padding:8px 0px;}
+#NewsEdit  .divimg img{  border:#ccc solid 1px;  }
+ /*newstype*/
+#newstypeselect{position:absolute; top:0px; right:0px; width:100%; display:none; padding-bottom:20px; border:#a1ca8e solid 3px;background-color:#fff;}
+#newstypeselect  .inputwidth{ width:80px;}
+#newstypeselect div{ height:30px; line-height:30px; margin-top:3px;}
+#newstypeselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#newstypeselect input{ height:18px; line-height:18px;float:right; width:300px;border:#999 1px solid; margin-top:5px;}
+#newstypeselect input[type=text]:focus{ border:red solid 1px;}
+#newstypeselect input[type=button],#newstypeselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+#newstypeselect .select_main{   color:#333; text-align:center;  width:400px; height:auto; margin:0px auto;margin-top:20px; }
+#newstypeselect .select_main div{ float:left;  }
+#newstypeselect .divbotton{ width:400px;padding-top:10px; clear:both; text-align:center;margin:0px auto;}
+ #newstypeselect .divbotton input{ float:none;}
+#newstypetitle{ width:100%; height:35px; border-bottom:#a1ca8e solid 1px; text-align:center;margin:0px auto;}
+#newstypetitle input{ margin-top:5px;}
+#newstypelist{ width:100%; border:#a1ca8e solid 1px;height:auto; min-width:600px; float:left;}
+#newstypelist  li{ float:left; width:10%; background:url('images/line_btm.gif') right top repeat-y ;; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden;}
+#newstypelist  li span{ float:left;background:url('images/line_btm.gif') right top repeat-y ;;  width:60px; height:100%; }
+#newstypelist  li span input{ margin-top:5px;}
+#newstypelist   li input[type=checkbox]{margin-top:5px;}
+#newstypelist .linewstype{ width:40%;}
+#newstypelist .liright{ background: none;width:40%; clear:right;}
+ /*classtype*/
+#classtypeselect{position:absolute; top:0px; right:0px; width:100%; display:none; padding-bottom:20px; border:#a1ca8e solid 3px;background-color:#fff;}
+#classtypeselect  .inputwidth{ width:80px;}
+#classtypeselect div{ height:30px; line-height:30px; margin-top:3px;}
+#classtypeselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#classtypeselect input{ height:18px; line-height:18px;float:right; width:300px;border:#999 1px solid; margin-top:5px;}
+#classtypeselect input[type=text]:focus{ border:red solid 1px;}
+#classtypeselect input[type=button],#classtypeselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+#classtypeselect .select_main{   color:#333; text-align:center;  width:400px; height:auto; margin:0px auto;margin-top:20px; }
+#classtypeselect .select_main div{ float:left;  }
+#classtypeselect .divbotton{ width:400px;padding-top:10px; clear:both; text-align:center;margin:0px auto;}
+#classtypeselect .divbotton input{ float:none;}
+#classtypetitle{ width:100%; height:35px; border-bottom:#a1ca8e solid 1px; text-align:center;margin:0px auto;}
+#classtypetitle input{ margin-top:5px;}
+#classtypelist{ width:100%; border:#a1ca8e solid 1px;height:auto; min-width:600px; float:left;}
+#classtypelist  li{ float:left; width:10%; background:url('images/line_btm.gif') right top repeat-y ;; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden;}
+#classtypelist  li span{ float:left;background:url('images/line_btm.gif') right top repeat-y ;;  width:60px; height:100%; }
+#classtypelist  li span input{ margin-top:5px;}
+#classtypelist   li input[type=checkbox]{margin-top:5px;}
+#classtypelist .liclasstype{ width:40%;}
+#classtypelist .liright{ background: none;width:40%; clear:right;}
+ /*baseinfo*/
+#baseinfoselect{position:absolute; top:0px; left:0px; width:100%; display:none; padding-bottom:20px; border:#a1ca8e solid 3px;background-color:#fff; }
+#baseinfoselect div{ height:30px; line-height:30px; margin-top:3px;}
+#baseinfoselect div span{ display:block; float:left; width:75px; margin-left:10px;  }
+#baseinfoselect input{ height:18px;float:right; line-height:18px; width:200px;border:#999 1px solid; margin-top:5px;}
+#baseinfoselect select {margin-top:5px; float:right;}
+#baseinfoselect input[type=text]:focus{ border:red solid 1px;}
+#baseinfoselect input[type=button],#baseinfoselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+#baseinfoselect .select_main{   color:#333; width:600px; height:auto;  padding-right:40px; margin:0px auto;}
+#baseinfoselect .select_main div{ width:300px; height:30px; line-height:30px; margin:0px auto}
+#baseinfoselect .divbotton{ width:300px; height:50px; padding-left:20px;line-height:50px; clear:both; text-align:center;margin:0px auto;}
+ #baseinfoselect .divbotton input{ float:none;}
+#baseinfotitle{ width:100%; height:35px; border-bottom:#a1ca8e solid 1px; text-align:center;margin:0px auto;}
+#baseinfotitle input{ margin-top:5px;}
+#baseinfodiv,#baseeditdiv{ padding-right:3px;  height:100%;   }
+#baseinfolist{width:100%; border:#a1ca8e solid 1px; height:auto; min-width:600px; float:left}
+#baseinfolist li{float:left; width:12%; background:url('images/line_btm.gif') right top repeat-y ;; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden; }
+#baseinfolist .txttime{width:14%; }
+#baseinfolist .lisrc{width:22%; }
+#baseinfolist .liwidth{width:8%; }
+#baseinfolist li input[type=checkbox]{margin-top:5px;}
+#baseinfolist  .liright{ background:none; clear:right;}
+#baseeditdiv .baseedit{ width:100%; height:100%;  float:left;}
+#baseeditdiv .baseedittitle{border:#a1ca8e solid 1px;height:30px;line-height:30px;text-align:center;font-weight:bold;  }
+#baseeditdiv .basesubmit input{ margin-top:10px;  }
+/*baseEdit*/
+#BaseEdit{ height:100%;  width:100%;}
+#BaseEdit .Baseedit_top{ width:400px; margin:0px auto;}
+#BaseEdit .Baseedit_top div{ height:35px; line-height:35px; width:380px; float:left;  }
+#BaseEdit .Baseedit_top span{ float:left; display:block; width:60px; }
+#BaseEdit .Baseedit_top input[type=text]{width:300px;  margin-top:8px;height:20px;line-height:18px;float:right; }
+#BaseEdit .Baseedit_top select{width:302px;  margin-top:8px;height:22px;line-height:18px;float:right; }
+#BaseEdit .divupload{ width:400px;  margin:0px auto;  }
+#BaseEdit .divupload span{ float:left; display:block; width:60px; }
+#BaseEdit .divupload  div{width:380px;   height:35px; line-height:35px; float:left }
+#BaseEdit .Baseedit_top .link{ }
+#BaseEdit  .upload{ margin:0px auto; float:right; margin-right:4px; width:238px; height:22px;  border:#999 solid 1px;margin-top:8px;  line-height:18px; }
+#BaseEdit .labcolor{  color:#a1ca8e ;  text-indent:70px; }
+#BaseEdit .btnfile{float:right; margin-top:8px; }
+#BaseEdit  .divimg{  height:auto !important;    padding:10px 0px;clear:both;width:380px; margin:0px auto;  text-align:center;  padding:8px 0px; }
+#BaseEdit  .divimg img{  border:#a1ca8e solid 1px; }
+#BaseEdit  .edit_content{ width:100%; height:100%; margin-bottom:10px;}
+.cleardiv{ clear:both;}
+#BaseEdit .bbase_submit{ width:400px;   }
+#BaseEdit .base_submittwo{ width:600px; float:none; margin:0px auto; text-align:center;margin-bottom:20px;}
+ /*classinfo*/
+#classinfoselect{position:absolute; top:0px; left:0px; width:100%; display:none; padding-bottom:20px; border:#a1ca8e solid 3px;background-color:#fff; }
+#classinfoselect div{ height:30px; line-height:30px; margin-top:3px;}
+#classinfoselect div span{ display:block; float:left; width:75px; margin-left:10px;  }
+#classinfoselect input{ height:18px;float:right; line-height:18px; width:200px;border:#999 1px solid; margin-top:5px;}
+#classinfoselect select {margin-top:5px; float:right;}
+#classinfoselect input[type=text]:focus{ border:red solid 1px;}
+#classinfoselect input[type=button],#classinfoselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+#classinfoselect .select_main{   color:#333; width:600px; height:auto;  padding-right:40px; margin:0px auto;}
+#classinfoselect .select_main div{ width:300px; height:30px; line-height:30px; margin:0px auto; float:left}
+#classinfoselect .divbotton{ width:300px; height:50px; padding-left:20px;line-height:50px; clear:both; text-align:center;margin:0px auto;}
+ #classinfoselect .divbotton input{ float:none;}
+#classinfotitle{ width:100%; height:35px; border-bottom:#a1ca8e solid 1px; text-align:center;margin:0px auto;}
+#classinfotitle input{ margin-top:5px;}
+#classinfodiv,#baseeditdiv{ padding-right:3px;  height:100%;   }
+#classinfolist{width:100%; border:#a1ca8e solid 1px; height:auto; min-width:600px; float:left}
+#classinfolist li{float:left; width:10%; background:url('images/line_btm.gif') right top repeat-y ;; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden; }
+#classinfolist .txttime{width:14%; }
+#classinfolist .liord{width:10%; }
+#classinfolist .liwidth{width:8%; }
+#classinfolist li input[type=checkbox]{margin-top:5px;}
+#classinfolist  .liright{ background:none; clear:right;}
+/*classEdit*/
+#classEdit{ height:100%;  width:100%;  }
+#classEdit .edit_top{ width:400px; margin:0px auto;}
+#classEdit .edit_top label{ float:left; margin-left:100px;}
+#classEdit .edit_top div{ height:35px; line-height:35px; width:380px; float:left; }
+#classEdit .edit_top span{ float:left; display:block; width:60px; }
+#classEdit .edit_top input[type=text]{width:300px; float:right;  margin-top:8px;height:20px;line-height:18px; }
+#classEdit .edit_top select{width:302px;  float:right; margin-top:8px;height:22px;line-height:18px; }
+#classEdit .edit_submit{  width:400px;  text-align:center;    margin:0px auto; }
+#classEdit .edit_submit div{height:35px;  line-height:35px; width:400px;  float:left;}
+
+ /*newstype*/
+#BannerTypelist{ width:100%; border:#a1ca8e solid 1px;height:auto; min-width:600px; float:left;}
+#BannerTypelist  li{ float:left; width:10%; background:url('images/line_btm.gif') right top repeat-y ; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden;}
+#BannerTypelist  li span{ float:left;background:url('images/line_btm.gif') right top repeat-y; width:60px; height:100%; }
+#BannerTypelist  li span input{ margin-top:5px;}
+#BannerTypelist   li input[type=checkbox]{margin-top:5px;}
+#BannerTypelist .linewstype{ width:35%;}
+#BannerTypelist .liright{ background: none; clear:right;width:11%;}
+/*userinfo*/
+#userselect{position:absolute; top:0px; right:0px; width:100%; display:none;  padding-bottom:10px; border:#a1ca8e solid 3px; background-color:#fff;  }
+#userselect div{ height:30px;  line-height:30px; margin-top:2px;}
+#userselect div span{ display:block; float:left; width:65px;  text-align:right; margin-right:10px; }
+#userselect input{ height:18px; float:right; line-height:18px; width:200px;border:#999 1px solid; margin-top:5px;}
+#userselect select { float:right; margin-top:5px; }
+#userselect input[type=text]:focus{ border:red solid 1px;}
+#userselect input[type=button],#userselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+#userselect .select_main{   color:#333; width:560px; height:auto; margin:0px auto;margin-top:5px; }
+#userselect .select_main div{ float:left; width:280px;}
+#userselect .divbotton{ width:560px; height:40px; float:none;  clear:both;text-align:center;margin:0px auto;   }
+#userselect .divbotton input{ float:none;}
+#userlist{ width:100%; padding:0px; height:auto; border:#a1ca8e solid 1px; min-width:600px; float:left;}
+#userlist  li{ float:left; width:13%; background:url('images/line_btm.gif') right top repeat-y;  text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden;}
+#userlist  li span{ float:left;background:url('images/line_btm.gif') right top repeat-y;  width:60px; height:100%; }
+#userlist  li span input{ margin-top:5px;}
+ #userlist .liright{background:none; clear:right;}
+ /*UsersEdit*/
+#UsersEdit{ height:100%;  width:100%; float:left; }
+#UsersEdit .edit_top{ width:600px; height:105px; margin:0px auto;}
+#UsersEdit .edit_top div{ height:35px; line-height:35px; width:290px; float:left;}
+#UsersEdit .edit_top span{ float:left; display:block; width:70px; text-align:right; }
+#UsersEdit .edit_top input,#UsersEdit .edit_top select{margin-top:8px; float:right; height:20px;line-height:18px;width:200px;border:#999 solid 1px;}
+#UsersEdit .edit_top input:focus,#UsersEdit .edit_top select:focus{border:#a1ca8e solid 1px;}
+#UsersEdit .edit_top select{ width:203px; }
+#UsersEdit .edit_submit{ width:600px; margin:0px auto; height:40px; line-height:40px; text-align:center; margin-top:30px; }
+ /*UserPwd*/
+#UserPwd{ height:100%;  width:100%;float:left; }
+#UserPwd .edit_top{ width:300px; height:105px; margin:0px auto;}
+#UserPwd .edit_top div{ height:35px; line-height:35px; width:290px; float:left;}
+#UserPwd .edit_top span{ float:left; display:block; width:80px; }
+#UserPwd .edit_top input{ height:18px;float:right; line-height:18px; width:200px;border:#999 1px solid; margin-top:6px;}
+#UserPwd .edit_top input:focus{border:red 1px solid;}
+#UserPwd .edit_submit{ width:300px; margin:0px auto; text-align:center; margin-top:10px; }
+#UserPwd .edit_submit input{ height:23px; line-height:23px; cursor:pointer; width:80px;border:#999 1px solid; margin-top:6px; margin-left:20px;}
+#UserPwd .edit_submit input[type=reset]{width:50px;}
+  /*roleinfo*/
+#roleselect{position:absolute; top:0px; right:0px; width:100%; display:none; height:130px; border:#a1ca8e solid 3px; background-color:#fff;  }
+#roleselect div{ height:30px; line-height:30px;}
+#roleselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#roleselect input{ height:18px; line-height:18px;float:right;  width:200px;border:#999 1px solid; margin-top:5px;}
+#roleselect select { float:right; margin-top:5px; }
+#roleselect input[type=text]:focus{ border:red solid 1px;}
+#roleselect input[type=button],#roleselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+#roleselect .select_main{   color:#333; width:300px; height:auto; margin:0px auto;}
+#roleselect .select_main div{ margin-top:5px; }
+#roleselect .divbotton{ width:300px; height:50px; clear:both; text-align:center;margin:0px auto;margin-top:5px; }
+#roleselect .divbotton input{ float:none;}
+#roletitle{ width:100%; height:35px; border-bottom:#a1ca8e solid 1px; text-align:center;margin:0px auto;}
+#roletitle input{ margin-top:5px;}
+#rolelist{ width:100%; border:#a1ca8e solid 1px;height:auto; min-width:600px; float:left;}
+#rolelist  li{ float:left; width:22%; background:url('images/line_btm.gif') right top repeat-y ;; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden;}
+#rolelist .liright{ background: none; clear:right;  width:25% !important;}
+#rolelist .liright a{ margin-left:10px;}
+  /*linklist*/
+#linkselect{position:absolute; top:0px; right:0px; width:100%; display:none; padding-bottom:20px; border:#a1ca8e solid 3px;background-color:#fff;}
+#linkselect  .inputwidth{ width:80px;}
+#linkselect div{ height:30px; line-height:30px;}
+#linkselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#linkselect input{ height:18px;float:right; line-height:18px; width:200px;border:#999 1px solid; margin-top:5px;}
+#linkselect input[type=text]:focus{ border:red solid 1px;}
+#linkselect input[type=button],#linkselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+#linkselect .select_main{   color:#333; text-align:center;  width:480px; height:auto; margin:0px auto;margin-top:20px; }
+#linkselect .select_main div{ float:left;margin-left:85px; }
+#linkselect .divbotton{ width:480px; padding-top:10px; clear:both; text-align:center;margin:0px auto;}
+ #linkselect .divbotton input{ float:none;}
+#linktitle{ width:100%; height:35px; border-bottom:#a1ca8e solid 1px; text-align:center;margin:0px auto;}
+#linktitle input{ margin-top:5px;}
+#linklist{ width:100%; border:#a1ca8e solid 1px;height:auto; min-width:600px; float:left;}
+#linklist  li{ float:left; width:26%; background:url('images/line_btm.gif') right top repeat-y ;; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden;}
+#linklist  li span{ float:left;background:url('images/line_btm.gif') right top repeat-y ;;  width:60px; height:100%; }
+#linklist  li span input{ margin-top:5px;}
+#linklist .liright{ background: none; clear:right; width:12% !important;}
+ /*helper*/
+#helperselect{position:absolute; top:0px; left:0px; width:100%; display:none; height:300px; border:#a1ca8e solid 3px;background-color:#fff; }
+#helperselect div{ height:30px; line-height:30px;}
+#helperselect div span{ display:block; float:left; width:75px; margin-left:10px; }
+#helperselect input{ height:18px; line-height:18px; width:200px;border:#999 1px solid; margin-top:5px;}
+#helperselect select {margin-top:5px; }
+#helperselect input[type=text]:focus{ border:red solid 1px;}
+#helperselect input[type=button],#helperselect input[type=submit]{ width:50px; height:23px; line-height:23px; border:#a1ca8e 1px solid;}
+#helperselect .select_main{   color:#333; width:600px; height:auto; margin:0px auto;}
+#helperselect .select_main div{ width:400px; height:30px; line-height:30px; margin:0px auto}
+#helperselect .divbotton{ width:400px; height:50px; clear:both; text-align:center;margin:0px auto;}
+#helpertitle{ width:100%; height:35px; border-bottom:#a1ca8e solid 1px; text-align:center;margin:0px auto;}
+#helpertitle input{ margin-top:5px;}
+#helperdiv,#baseeditdiv{ padding-right:3px;  height:100%;   }
+#helperlist{width:100%; border:#a1ca8e solid 1px; height:auto; min-width:600px; float:left}
+#helperlist li{float:left; width:10%; background:url('images/line_btm.gif') right top repeat-y ;; text-align:center;
+                  height:25px; line-height:25px; border-bottom:#a1ca8e solid 1px; overflow:hidden; }
+#helperlist .basetxt{width:50%; }
+#helperlist li input[type=checkbox]{margin-top:5px;}
+#helperlist  .liright{ background:none;  clear:right;}
+/*baseEdit*/
+#BaseEdit{ height:100%;  width:100%; float:left; }
+#BaseEdit .edit_top{ width:600px; margin:0px auto;}
+#BaseEdit .edit_top div{ height:35px; line-height:35px; width:290px; float:left;}
+#BaseEdit .edit_top span{ float:left; display:block; width:60px; }
+#BaseEdit .edit_top input,#BaseEdit .edit_top select{ margin-top:8px;float:right;}
+#BaseEdit  .edit_content{ float:left; width:100%; height:100%; margin-top:10px;}
+#BaseEdit .edit_submit{ float:left;  margin-top:10px; }
+#BaseEdit .description div{   width:600px;  margin:0px auto;}
+#BaseEdit .description div span{ float:left; display:block; width:80px;}
+#BaseEdit .description textarea{ width:492px; height:40px; padding:0px; max-height:40px; max-width:492px;}
+
+/*resEdit*/
+#resEdit{ height:100%;  width:100%;}
+#resEdit .edit_top{ width:400px; margin:0px auto;}
+#resEdit .edit_top div{ height:35px; line-height:35px; width:380px; float:left;  }
+#resEdit .edit_top span{ float:left; display:block; width:60px; }
+#resEdit .edit_top input[type=text]{width:300px;  margin-top:8px;height:20px;line-height:18px;float:right; }
+#resEdit .edit_top select{width:302px;  margin-top:8px;height:22px;line-height:18px;float:right; }
+
+#resEdit  .divupload{ margin:0px auto;  width:380px; padding-left:20px; }
+.divti{width:100%; height:35px; line-height:35px;float:left;  margin-top:30px;  color:#888}
+ .divflash{ width:100%; height:35px; line-height:35px;float:left;   }
+.divlab{width:100%;height:35px; line-height:35px;float:left;  }
+#some_file_queue{width:100%; float:left; }
+#resEdit  .edit_content{ width:100%; height:100%; margin-bottom:10px;}
+#resEdit .edit_submit{ width:600px; margin:0px auto; height:40px; line-height:40px; text-align:center; margin-top:30px; }
+
+  
+                         
+ 
+
+                         

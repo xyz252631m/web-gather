@@ -1,0 +1,26 @@
+﻿body{ background-color:#6d0d0f;}
+#logindiv{ width:988px; height:611px; margin:0px auto;margin-top:0px;  background:url('images/login_bg.jpg') no-repeat;}
+#logindiv .loginmain{  width:500px;  height:300px;  margin:0px auto; padding-top:183px;}
+#logindiv  .maintop{width:247px;  height:79px;background:url('images/login_tl.gif') no-repeat;margin:0px auto; }
+#logindiv .maincontents{width:340px; height:150px;margin:0px auto; margin-top:10px;}
+#logindiv .contentsleft { width:220px; height:150px; float:left; margin-left:60px;}
+#logindiv .contentsleft  div{  height:30px;}
+#logindiv .contentsleft input{ height:20px;float:right;  line-height:18px; width:150px; border:#de8483 solid 1px;;}
+#logindiv .contentsleft span{ float:left; display:block; width:60px; height:25px; line-height:25px; color:#AF0400}
+#logindiv .contentsright{width:106px; display:none; height:88px; background:url('images/denglu2.gif') no-repeat; float:left;
+                        margin-top:10px; margin-left:10px; cursor:pointer; }
+#logindiv  .checkwidth{ width:90px !important;}
+#logindiv  .imgwidth{ width:50px !important; height:20px; float:right; margin-left:8px;border:#de8483 solid 1px;}
+
+#logindiv  .loginbtn{ outline:none; display:block; width:106px; height:88px; border:none;}
+#logindiv .mainbottom{color:White; font-size:12px; text-align:center; height:30px; line-height:30px; margin-top:20px; }
+
+#btmlogin{ text-align:center; width:220px; height:30px;}
+#btmlogin input{ }
+#btmlogin span{ float:left;}
+.loginbtmbtn{ margin-left:70px; outline:none; display:block; float:left; width:52px; height:23px; background:url('images/denglu2.gif') no-repeat;border:none;}
+
+.loginbtmreset{ border:none !important; outline:none; display:block;  margin-left:10px; float:left !important; cursor:pointer; width:52px !important; height:23px !important; background:url('images/chozhi2.gif') no-repeat;border:none;}
+
+
+

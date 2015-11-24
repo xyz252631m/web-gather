@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Scripts/require/require.js"></script>
+    <script src="Scripts/start.js"></script>
+</head>
+<body>
+    <a href="index.html"><em>gulp 说明</em></a>
+    <div id="ng-menu">
+        <div ng-controller="listCtrl">
+            <ul ng-repeat="item in list track by $index">
+                <li>{{item}}</li>
+            </ul>
+            <input id="btntest" type="button" value="添加新数字" ng-click="add()" />
+        </div>
+    </div>
+    <div>
+        <label id="labtxt">  Hello,Word!</label>
+        <input id="change" type="button" value="change" />
+    </div>
+    <script>
+        //require 使用模块方式
+        //angular 模块
+        require(["angular", 'page/temp/addlist'], function (angular, app) {
+            angular.bootstrap(document.getElementById("ng-menu"), ["temapp"]);  //启动应用---传入作用域和应用名称
+        });
+        //普通 模块
+        require(["jquery", "page/temp/change"], function ($, change) {
+            $("#change").on("click", function () {
+                var str = $("#labtxt").text();
+                $("#labtxt").text(change(str));
+            });
+        });
+    </script>
+</body>
+</html>

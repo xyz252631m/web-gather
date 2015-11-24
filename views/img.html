@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>选择图片</title>
+    <link href="css/base/base.css" rel="stylesheet" />
+    <style>
+        .file-txt { height: 30px; line-height: 30px; }
+        .file-txt input[type=file] { border:#ccc solid 1px;  font-size:12px; }
+        #yuandiv { float: left; width: 400px; height: 400px; background: url(/Content/default/Images/tem/select_bg.png); background-color: white; border-right: #ccc solid 1px; text-align: center; }
+        #imgHead { max-width: 400px; max-height: 400px; }
+        #divreimg { float: left; position: relative; overflow: hidden; width: 200px; height: 200px; margin-left: 20px; border: #ccc solid 1px; margin-top: 15px; }
+        #reimg { position: relative; }
+        #savediv { width: 200px; height: 50px; float: left; margin-left: 20px; margin-top: 20px; }
+        #savediv input { width: 80px; height: 30px; line-height: 30px; margin-left: 5px; float: left; border: none; background-color: #f80; color: #fff; letter-spacing: 5px; text-indent: 7px; cursor: pointer; }
+        #savediv .cel { float: right; margin-right: 5px; }
+        #ie7img { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale',src="C:\fakepath\198135-106.jpg"); width:300px; height:300px;}
+        #ie8img { width:400px; height:400px;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');   }
+        #ie7 {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='image'); visibility:hidden; }
+        #ie7div { width:10px; height:10px; overflow:hidden; }
+         </style>
+    <link href="imgArea/imgareaselect-animated.css" rel="stylesheet" />
+    <script src="javascripts/jquery-1.7.1.min.js"></script>
+    <script>
+        //默认图片
+        function defaultImg(T) {
+            T.src = "image/ico_mannger_03.jpg";
+        }
+    </script>
+   
+</head>
+<body>   
+    <form id="frmImg" method="post" action="/Member/Home/CropHeader" enctype="multipart/form-data">
+        <div class="file-txt">
+            <input type="file" value="选择图片" id="upImg" name="upImg" accept="image/*" />
+            <input type="hidden" id="position" name="position" />
+        </div>
+    </form>
+    <div>
+        <div id="yuandiv">
+         
+            <img id="imgHead" src="/Member/Home/GetPhoto"   alt="没有设置头像" onerror="defaultImg(this)" />
+        </div>
+        <div id="divreimg">
+            <img id="reimg"  src="#" onerror="defaultImg(this)" />
+        </div>
+        <div id="savediv">
+            <input type="button" id="btnSave" value="确认" />
+            <input type="button" id="btncel" class="cel" value="取消" />
+        </div>
+    </div>
+    <div>
+        <label id="str"></label>
+         <label id="filter"></label>
+    </div>
+    <div id="ie7div">
+   <img id="ie7"/>
+    </div>
+ 
+
+    
+     <script src="javascripts/jquery.imgareaselect.pack.js"></script>
+    <script type="text/ecmascript">
+        $("#reimg").attr("src", $("#imgHead").attr("src"));
+        $(function () {
+            window.onload = function () {
+                if ($("#imgHead").attr("src") != "/Content/default/Images/ico_mannger_03.jpg") {
+                    if ($("#imgHead").height()) {
+                        var t = $("#imgHead").imgAreaSelect({
+                            handles: true,
+                            aspectRatio: '1:1',
+                            x1: 0,
+                            y1: 0,
+                            x2: 100,
+                            y2: 100,
+                            onSelectEnd: preview
+                        });
+                    }
+                }
+            }
+            $("#btncel").click(function () {
+                top.closeBox();
+            });
+            $("#upImg").change(function () {
+                if ($("#upImg").val() != "") {
+                    //ie 7
+                    if (typeof FileReader == 'undefined') {
+
+                        try{
+                         //   $("#ie8img")[0].filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = $("#upImg").val();
+                        } catch (e) {
+                            $("#filter").text("error");
+                        }
+                        var himg = $("#imgHead");
+                        $("#imgHead").css("width", "400px");
+                     //   himg[0].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale',src=\"" + $("#upImg").val() + "\")";
+                        //取消显示浏览器默认图片
+                     //   himg[0].src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+                        $("#imgHead").css("filter", "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')");
+                        $("#imgHead")[0].filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = $("#upImg").val();
+                        $("#ie7")[0].filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = $("#upImg").val();
+                       // himg[0].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale',src=\"" + $("#upImg").val() + "\")";
+                        // 设置img的src为base64编码的透明图片 取消显示浏览器默认图片
+                        himg[0].src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+                        $("#filter").text(himg[0].style.filter);
+                        var bimg = $("#reimg");
+                        $("#reimg").css("width", "400px");
+                        bimg[0].style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale',src=\"" + $("#upImg").val() + "\")";
+                        //取消显示浏览器默认图片
+                        bimg[0].src = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+                        $("#imgHead").imgAreaSelect({
+                            handles: true,
+                            aspectRatio: '1:1',
+                            x1: 0,
+                            y1: 0,
+                            x2: 100,
+                            y2: 100,
+                            onSelectEnd: preview
+                        });
+                        return;
+                    }
+                    //html5 FileReader
+                    var reader = new FileReader();
+                    reader.onload = function (evt) {
+                        $("#imgHead").attr("src", evt.target.result);
+                        $("#reimg").attr("src", evt.target.result);
+                        $("#imgHead").imgAreaSelect({
+                            handles: true,
+                            aspectRatio: '1:1',
+                            x1: 0,
+                            y1: 0,
+                            x2: 100,
+                            y2: 100,
+                            onSelectEnd: preview
+                        });
+                    }
+                    reader.readAsDataURL(this.files[0]);
+                }
+            });
+        });
+        function preview(img, selection) {
+            var scaleX = 200 / (selection.width || 1);
+            var scaleY = 200 / (selection.height || 1);
+            var ywidth = $("#imgHead").width();
+            var yheight = $("#imgHead").height();
+            //设置选区值 position
+            var size = GetImgNaruralSize();
+            var str = Math.round(size.width / ywidth * selection.x1) + ",";
+            str += Math.round(size.height / yheight * selection.y1) + ",";
+            str += Math.round(size.width / ywidth * selection.width) + ",";
+            str += Math.round(size.height / yheight * selection.height);
+            $("#position").val(str);
+            $("#str").text(str);
+            //预览图片坐标点
+            $('#reimg').css({
+                width: Math.round(scaleX * ywidth) + 'px',
+                height: Math.round(scaleY * yheight) + 'px',
+                marginLeft: '-' + Math.round(scaleX * selection.x1) + 'px',
+                marginTop: '-' + Math.round(scaleY * selection.y1) + 'px'
+            });
+        }
+        function GetImgNaruralSize() {
+            var width = $("#imgHead")[0].naturalWidth;
+            var height = $("#imgHead")[0].naturalHeight;
+            if (width) {
+                return { width: width, height: height };
+            } else {
+                var img = $("#ie7")[0];
+              //  var img = new Image();
+            //    img.src = $("#upImg").val();// $("#imgHead")[0].src;
+                return { width: img.offsetWidth, height: img.offsetHeight };
+            }
+        }
+        $('#btnSave').click(function () {
+            if ($("#position").val() == "") {
+                alert("未选择图片");
+                return;
+            }
+            $("#frmImg").submit();
+        });
+    </script>
+</body>
+</html>

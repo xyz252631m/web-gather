@@ -1,0 +1,47 @@
+﻿/*edit*/
+.edit{ height:auto;width:100%}
+.edit .edit_top{ width:400px; height:auto; margin:0px auto}
+.edit .edit_top div{ height:45px; line-height:45px; width:400px; float:left}
+.edit .edit_top span,.edit .upload span{ float:left; display:block; width:70px; text-align:right}
+.edit .edit_top input,.edit .edit_top select{margin-top:12px; float:right; height:20px;line-height:18px;width:320px;border:#999 solid 1px}
+.edit .edit_top input:focus,.edit .edit_top select:focus{border:#ff0000 solid 1px}
+.edit .edit_top select{ width:322px;height:22px}
+.edit .edit_top .txtremark{width:322px;float:right;height:15px;margin-left:10px; line-height:15px; color:#bfc8cf}
+/*edit  upload*/
+.edit .upload{ width:400px;height:35px;line-height:35px;margin:0px auto; padding-top:8px; clear:both;}
+.edit .upload input[type=file]{width:256px;height:20px;float:right;margin-right:4px; border:#999 solid 1px;margin-top:8px;  line-height:18px; }
+.edit .upload input[type=submit]{ width:50px;float:right;margin-top:8px;  cursor:pointer; border:#bfc8cf 1px solid;}
+.edit .upload input[type=submit]:hover{border:#bfc8cf solid 1px;}
+/*edit  textarea*/
+.edit .textarea{  width:400px; height:auto;margin:0px auto; clear:both}
+.edit .textarea span{float:left; display:block; width:70px; text-align:right; margin-top:8px;}
+.edit .textarea textarea{ margin-top:8px;float:right;  width:320px; resize:vertical; height:50px;   border:#999 solid 1px}
+.edit .textlabel{ width:400px; height:auto;margin:0px auto}
+.edit .textlabel label{ display:block;margin-top:8px; width:222px; height:25px; text-align:right;  color:#aaa; float:right;}
+/*edit  ckeditor*/
+.edit .edit_content{ width:100%; height:100%; margin-bottom:10px;}
+.edit .edit_content span{ text-align:left;}
+/*edit buttom*/
+.edit .edit_submit{ clear:both; width:600px; margin:0px auto; height:50px; line-height:50px; text-align: left;  float:left;  margin-top:20px}
+.edit input[type=button], input[type=submit]{ width:50px; height:22px;margin-left:10px; cursor:pointer; border:#bfc8cf 1px solid}
+.edit input[type=button]:hover, input[type=submit]:hover{border:#00eeee solid 1px; background-color:White}
+/*class */
+.edit .divimg{ width:100%; text-align:center; height:auto;   float:left;  padding:10px 0px;}
+.edit .divimg img{  border:#bfc8cf solid 1px; }
+.edit .imglab{width:250px;height:25px; line-height:25px; margin:0 auto; }
+.edit .imglab label{color:#aaa; }
+/************************/
+/*BaseEdit*/
+#BaseEdit .imglab{ width:400px; text-indent:80px;}
+#BaseEdit .base_submittwo{ width:600px; float:none; margin:0px auto; margin-top:20px; text-align:center;margin-bottom:20px;}
+/*changePwd*/
+#changePwd{   }
+#changePwd .edit .edit_submit{ clear:both;width:600px;margin:0px auto;height:50px; line-height:50px; text-align:center; margin-top:30px}
+#changePwd  input[type=button], input[type=submit]{ width:80px; }
+#changePwd .bgreset{ width:50px;height:22px;margin-left:10px; cursor:pointer; border:#bfc8cf 1px solid}
+#changePwd  input[type=button]:hover, input[type=submit]:hover{border:#00eeee solid 1px; background-color:White}
+
+
+
+
+
