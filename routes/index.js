@@ -6,7 +6,7 @@
     //    res.render('lesshelper', { title: 'Express' });
     //});
     app.get('/', function (req, res) {
-        res.render('test/index', { title: 'gulp' });
+        res.render('test/ngAlert', { title: 'ngAlert' });
     });
     app.get('/webview', function (req, res) {
         res.render('test/webview-app', { title: 'gulp' });

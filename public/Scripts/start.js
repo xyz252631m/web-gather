@@ -14,6 +14,7 @@
             exports: '$.alertBox'
         },
         'angular': {
+            deps: ['jquery'],
             exports: "angular"
         },
         'angular-route': {
