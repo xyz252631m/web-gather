@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link href="css/base.css" rel="stylesheet" />
+	<style>
+		.main { width: 880px; min-height: 600px; margin: 0 auto; border: #ccc solid 1px; }
+
+		.img-cont { width: 880px; height: 240px; position: relative; overflow: hidden; }
+
+		.imgs-cont { width: 100%; }
+
+		.imgs-cont .img-list { width: 100%; }
+
+		.imgs-cont .img-list > a { width: 100%; text-align: center; }
+
+		.imgs-cont a img { width: 880px; height: 238px; margin: 0 auto; }
+
+		.img-list { position: absolute; width: 4520px; height: 238px; }
+
+		.img-list > a { display: block; width: 880px; height: 238px; position: absolute; }
+
+		.img-list > img { width: 880px; height: 238px; position: absolute; }
+
+		.img-cont ul { position: absolute; bottom: 10px; right: 20px; z-index: 999; }
+
+		.img-cont li { width: 16px; height: 15px; float: left; line-height: 15px; margin-left: 10px; }
+
+		.img-cont ul a { display: block; width: 16px; height: 15px; text-align: center; font-size: 12px; border-radius: 7px; }
+
+		.img-cont ul a:hover { background-color: #bbb; color: #fff; }
+
+		.img-cont ul .active { background-color: #ccc; color: #fff; }
+	</style>
+	<script src="Scripts/jquery-1.10.2.min.js"></script>
+	<script src="Scripts/angular/angular.min.js"></script>
+	<script src="Scripts/angular/angular-animate.js"></script>
+	<script src="Scripts/extend.js"></script>
+</head>
+<body>
+<!--img list-->
+<div class="img-cont imgs-cont">
+
+	<div class="img-list" img-move>
+		<a style="background-color:#eee"> <img src="images/218828-106.jpg" /> </a> <a style=" background-color:#ccc"> <img src="images/222021-106.jpg" /> </a> <a style=" background-color:#ef8473"> <img src="images/260951-106.jpg" /> </a> <a style=" background-color:#324234"> <img src="images/221268-106.jpg" /> </a>
+	</div>
+	<ul>
+		<li><a class="active" data-value="1">1</a></li>
+		<li><a data-value="2">2</a></li>
+		<li><a data-value="3">3</a></li>
+		<li><a data-value="4">4</a></li>
+	</ul>
+
+</div>
+<div class="main">
+
+	<div class="img-cont">
+		<div class="img-list">
+			<img src="images/218828-106.jpg" /> <img src="images/222021-106.jpg" /> <img src="images/260951-106.jpg" /> <img src="images/221268-106.jpg" />
+		</div>
+		<ul>
+			<li><a class="active">1</a></li>
+			<li><a>2</a></li>
+			<li><a>3</a></li>
+			<li><a>4</a></li>
+		</ul>
+	</div>
+	<div class="img-cont">
+		<div class="img-list">
+			<img src="images/218828-106.jpg" /> <img src="images/222021-106.jpg" /> <img src="images/260951-106.jpg" /> <img src="images/221268-106.jpg" />
+		</div>
+		<ul>
+			<li><a class="active">1</a></li>
+			<li><a>2</a></li>
+			<li><a>3</a></li>
+			<li><a>4</a></li>
+		</ul>
+	</div>
+</div>
+    <pre>
+html 格式如下：
+    &lt;div class=&quot;img-cont&quot;&gt;
+        &lt;div class=&quot;img-list&quot;&gt;
+            &lt;img src=&quot;/Content/images/218828-106.jpg&quot; /&gt;
+            &lt;img src=&quot;/Content/images/222021-106.jpg&quot; /&gt;
+            &lt;img src=&quot;/Content/images/260951-106.jpg&quot; /&gt;
+            &lt;img src=&quot;/Content/images/221268-106.jpg&quot; /&gt;
+        &lt;/div&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a class=&quot;active&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+样式：
+        .img-cont { width: 880px; height: 240px; position: relative; overflow: hidden; } 
+        .img-list { position: absolute; width: 4520px; height: 238px; }
+            .img-list > img { width: 880px; height: 238px; position: absolute; }
+        .img-cont ul { position: absolute; bottom: 10px; right: 20px; z-index: 999; }
+        .img-cont li { width: 16px; height: 15px; float: left; line-height: 15px; margin-left: 10px; }
+        .img-cont ul a { display: block; width: 16px; height: 15px; text-align: center; font-size: 12px; border-radius: 7px; }
+            .img-cont ul a:hover { background-color: #bbb; color: #fff; }
+        .img-cont ul .active { background-color: #ccc; color: #fff; }
+js：
+        $(".img-cont").eq(2).imgMove({ type: 'right' });//参数speed为动画间隔(默认为2000)，type为类型(left,right,fade)
+</pre>
+<br /><br /><br />
+<script>
+	var app = angular.module("app", ["extend", "ngAnimate"]);
+	app.directive("imgMove", function ($animate, $animateCss, $q) {
+		//只实现了渐变效果(fade)
+		var opt = {
+			speed: 2000
+			//type: 'left'  //left,right,fade
+		}
+		return function (scope, ele, attr, ctrl) {
+			var menu = ele.next(), speed = opt.speed, num = 0;//循环次数;
+			var list = ele.children();
+			var len = list.length; //width = list[0].offsetHeight;
+			var selectIndex = 0, dindex = -1, temindex = -1; //选中索引 //下次选中索引 //临时选中索引
+			list.eq(0).css("z-index", list.length);
+			//滑动
+			var animate = function () {
+				var index = selectIndex;
+				//动画未完成时重复点击
+				if (index == temindex) {
+					return;
+				}
+				var downindex = ~dindex ? dindex : (selectIndex + 1) == len ? 0 : selectIndex + 1;//是否点击执行事件
+				//是否重复点击
+				if (index == downindex) {
+					dindex = -1;
+					return;
+				}
+				num++;
+				temindex = index;
+				list.eq(downindex).css({'opacity': 1, 'z-index': 1});
+
+				var promises=[];
+
+				for (var i = 10; i >= 0; i--) {
+					function a() {
+						list.eq(index).css({'opacity': i / 10});
+					};
+					promises.push(a());
+				}
+				$q.all(promises).then(function () {
+					list.eq(downindex).css("z-index", len);
+					selectIndex = downindex;
+				})
+
+//				$animateCss(list.eq(index), {
+//					to: {opacity: 0},
+//					duration: 1
+//				}).start().then(function () {
+//					list.eq(downindex).css("z-index", len);
+//					selectIndex = downindex;
+//				});
+				menu.find("a").removeClass("active");
+				menu.find("a").eq(downindex).addClass("active");
+				dindex = -1;
+			};
+			var t = setInterval(animate, speed);
+			menu.find("a").bind("click", function () {
+				clearInterval(t);
+				dindex = parseInt(angular.element(this).attr("data-value")) - 1;//当前元素索引
+				animate();
+				t = setInterval(animate, speed);
+			});
+		}
+	});
+
+
+	angular.bootstrap(document, ["app"]);
+	//	$(".img-cont").eq(0).imgMove({ type: 'fade' });
+	//	$(".img-cont").eq(1).imgMove({ type: 'left' });
+	//	$(".img-cont").eq(2).imgMove({ type: 'right' });
+</script>
+
+
+</body>
+</html>

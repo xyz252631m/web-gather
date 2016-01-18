@@ -6,7 +6,8 @@
         domReady: 'require/domReady',
         alertBox: 'require/alertBox',
         angular: "angular/angular.min",
-        'angular-route': 'angular/angular-route.min'
+        'angular-route': 'angular/angular-route.min',
+        'dialog':'flower-dialog'
     },
     shim: {
         'alertBox': {
